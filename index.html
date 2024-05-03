@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true
+                },
+                extend: {
+                    colors: {
+                        mute: '#666666',
+                        primary: '#09B451',
+                        primaryLight: '#E7FAEF',
+                        blueLight: '#DDFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body,
+        body * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container flex items-center justify-between py-[26px]">
+            <div class="flex">
+                <a href="#">
+                    <img src="./assets/img/logo.svg" alt="">
+                </a>
+                <nav class="flex gap-[24px] pl-[130px]">
+                    <a href="#" class="h-[48px] flex items-center px-[10px] text-mute">
+                        Home
+                    </a>
+                    <a href="#" class="h-[48px] flex items-center px-[10px] text-mute">
+                        Courses
+                    </a>
+                    <a href="#" class="h-[48px] flex items-center px-[10px] text-mute">
+                        Instuctors
+                    </a>
+                    <a href="#" class="h-[48px] flex items-center px-[10px] text-mute">
+                        Schedules
+                    </a>
+                    <a href="#" class="h-[48px] flex items-center px-[10px] text-mute">
+                        Contact Us
+                    </a>
+                </nav>
+            </div>
+            <div class="flex items-center">
+                <button class="size-[24px] flex items-center justify-center mr-[24px]">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="h-[44px] px-[24px] text-primary flex items-center justify-center">
+                    Login
+                </button>
+                <button class="h-[44px] px-[24px] flex items-center justify-center bg-primary text-white rounded">
+                    Register
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div
+            class="container bg-gradient-to-b from-[#fafdfc] to-[#f1fbf6] rounded-[50px] overflow-hidden pl-[60px] pr-[40px] py-[40px] flex gap-[30px] relative after:content-[''] after:bg-[#E4FFFF] after:absolute after:top-0 after:bottom-0 after:right-0 after:w-[107px]">
+            <div class="flex w-1/2 justify-center flex-col items-start">
+                <h2 class="text-[60px] font-bold leading-[90px]">Quality <span class="text-primary">Education</span> By
+                    Any Means Necessary.</h2>
+
+                <button
+                    class="h-[44px] px-[24px] mt-[48px] flex items-center justify-center bg-primary text-white rounded">
+                    Get Started
+                </button>
+            </div>
+
+            <div class="shrink-0 w-1/2 flex justify-end relative z-10">
+                <figure class="w-[430px] h-[500px] rounded-[40px] overflow-hidden">
+                    <img src="./assets/img/wallpaper.png" class="size-full object-cover" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container pt-[84px] flex justify-between">
+            <a href="#" class="h-[60px] rounded-[5px] px-[22px] bg-blueLight flex items-center ">
+                <span
+                    class="mr-[12px] size-[40px] text-white rounded-full bg-primary inline-flex justify-center items-center">
+                    <i class="fa-regular fa-comment"></i>
+                </span>
+                <span>Problem Solving</span>
+            </a>
+            <a href="#" class="h-[60px] rounded-[5px] px-[22px] bg-blueLight flex items-center ">
+                <span
+                    class="mr-[12px] size-[40px] text-white rounded-full bg-primary inline-flex justify-center items-center">
+                    <i class="fa-regular fa-comment"></i>
+                </span>
+                <span>Live chat</span>
+            </a>
+            <a href="#" class="h-[60px] rounded-[5px] px-[22px] bg-blueLight flex items-center ">
+                <span
+                    class="mr-[12px] size-[40px] text-white rounded-full bg-primary inline-flex justify-center items-center">
+                    <i class="fa-regular fa-comment"></i>
+                </span>
+                <span>Group Reading</span>
+            </a>
+            <a href="#" class="h-[60px] rounded-[5px] px-[22px] bg-blueLight flex items-center ">
+                <span
+                    class="mr-[12px] size-[40px] text-white rounded-full bg-primary inline-flex justify-center items-center">
+                    <i class="fa-regular fa-comment"></i>
+                </span>
+                <span>10k Courses</span>
+            </a>
+            <a href="#" class="h-[60px] rounded-[5px] px-[22px] bg-blueLight flex items-center ">
+                <span
+                    class="mr-[12px] size-[40px] text-white rounded-full bg-primary inline-flex justify-center items-center">
+                    <i class="fa-regular fa-comment"></i>
+                </span>
+                <span>Hand-on activities</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="mt-[140px] mb-[98px]">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <h4 class="text-[32px] font-bold">Choose favourite course from top cartegories</h4>
+                <a href="#" class="text-[24px]">See all</a>
+            </div>
+
+            <div class="grid grid-cols-4 pt-[64px] gap-[32px]">
+                <div class="h-[432px] relative">
+                    <figure class="h-full">
+                        <img src="./assets/img/wallpaper.png" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="absolute bg-black/30 inset-0 flex items-end px-[24px] pb-[10px]">
+                        <h5 class="text-white text-[32px] font-[600]">Marketing</h5>
+                    </div>
+                </div>
+                <div class="h-[432px] relative">
+                    <figure class="h-full">
+                        <img src="./assets/img/wallpaper.png" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="absolute bg-black/30 inset-0 flex items-end px-[24px] pb-[10px]">
+                        <h5 class="text-white text-[32px] font-[600]">Marketing</h5>
+                    </div>
+                </div>
+                <div class="h-[432px] relative">
+                    <figure class="h-full">
+                        <img src="./assets/img/wallpaper.png" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="absolute bg-black/30 inset-0 flex items-end px-[24px] pb-[10px]">
+                        <h5 class="text-white text-[32px] font-[600]">Marketing</h5>
+                    </div>
+                </div>
+                <div class="h-[432px] relative">
+                    <figure class="h-full">
+                        <img src="./assets/img/wallpaper.png" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="absolute bg-black/30 inset-0 flex items-end px-[24px] pb-[10px]">
+                        <h5 class="text-white text-[32px] font-[600]">Marketing</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-[98px]">
+        <div class="container">
+            <div class="flex items-center mb-[36px] justify-between">
+                <h4 class="text-[32px] font-bold">Most Popular courses</h4>
+                <label class="relative">
+                    <i
+                        class="fa-solid fa-chevron-down absolute bottom-0 top-0 text-white left-[16px] my-auto justify-center items-center inline-flex size-[30px]"></i>
+                    <select name="" id=""
+                        class="bg-primary outline-none h-[46px] pr-[16px] pl-[50px] rounded-full text-white appearance-none">
+                        <option value="">Sort By</option>
+                        <option value="">Price ASC</option>
+                        <option value="">Price DESC</option>
+                    </select>
+                </label>
+            </div>
+            <div class="grid grid-cols-3 gap-[32px]">
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-[98px]">
+        <div class="container">
+            <div class="flex items-center mb-[36px] justify-between">
+                <h4 class="text-[32px] font-bold">Learn a new skill in two hours</h4>
+            </div>
+            <div class="grid grid-cols-3 gap-[32px]">
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="rounded-[10px] overflow-hidden shadow-[0px_0px_20px_0px_#CBCBCB40]">
+                    <figure>
+                        <img src="./assets/img/blog.jpeg" alt="">
+                    </figure>
+                    <div class="p-[24px]">
+                        <div class="flex items-start mb-[42px]">
+                            <span class="font-medium leading-[36px] pr-[20px] text-[24px]">Learn Marketing from Top
+                                Instructors.</span>
+
+                            <span class="flex items-center mt-[5px]">
+                                <i class="fa-regular fa-star text-[14px] text-primary mr-[6px]"></i>
+                                <span class="text-[16px]">4.5</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="space-x-[16px]">
+                                <span>6 weeks</span>
+                                <span>
+                                    <i class="fa-solid text-primary text-[14px] fa-user-group"></i>
+                                    <span>1.5k Students</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-primary text-[24px] font-semibold">30.5$</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-[98px]">
+        <div class="container">
+            <div class="flex items-center mb-[36px] justify-between">
+                <h4 class="text-[32px] font-bold">We Bring The Good Education To Life</h4>
+            </div>
+
+            <div class="grid grid-cols-12 gap-[90px]">
+                <div class="col-span-4 relative">
+                    <figure class="aspect-[3/4] rounded-[30px] overflow-hidden">
+                        <img src="./assets/img/blog.jpeg" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="shadow-[0px_0px_76px_0px_#70707040] rounded-tl-[7px] rounded-bl-[7px] rounded-tr-[7px] rounded-br-[17px] absolute right-[-48px] p-[12px] z-10 bg-white bottom-[100px]">
+                        <div class="flex justify-center">
+                            <span class="bg-primaryLight rounded-full text-primary size-[40px] inline-flex justify-center items-center">
+                                <i class="fa-solid fa-suitcase"></i>
+                            </span>
+                            
+                        </div>
+                        <div>
+                            <p class="text-center text-[16px] font-semibold">
+                                <span class="text-[24px] text-primary relative after:content-[''] after:bg-center after:bg-[url('/assets/img/line.svg')] after:absolute after:top-[calc(100%_-_5px)] after:h-[5px] after:left-0 after:right-0 after:bg-no-repeat">Job</span> <br> Opportunities
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-8">
+                    <h3 class="text-[48px] font-semibold mb-[24px]">Let Your Education Do The Walking</h3>
+                    <div class="space-y-[32px]">
+                        <div class="flex items-center text-[20px] font-medium">
+                            <span class="size-[50px] bg-primaryLight text-primary rounded-full flex items-center justify-center mr-[24px]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span>Free E-book, Videos and kits</span>
+                        </div>
+                        <div class="flex items-center text-[20px] font-medium">
+                            <span class="size-[50px] bg-primaryLight text-primary rounded-full flex items-center justify-center mr-[24px]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span>Free E-book, Videos and kits</span>
+                        </div>
+                        <div class="flex items-center text-[20px] font-medium">
+                            <span class="size-[50px] bg-primaryLight text-primary rounded-full flex items-center justify-center mr-[24px]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span>Free E-book, Videos and kits</span>
+                        </div>
+                        <div class="flex items-center text-[20px] font-medium">
+                            <span class="size-[50px] bg-primaryLight text-primary rounded-full flex items-center justify-center mr-[24px]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span>Free E-book, Videos and kits</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
